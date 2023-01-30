@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/serif.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>Scalable Vector Graphics</section>
+			<section>
+				<p style="font-size: 20px;">SVG is an open standard developed by the <a href="https://www.w3.org" target="_blank">World Wide Web
+						Consortium (W3C)</a> since 1999.</p>
+				<p style="font-size: 20px;">It designed to work with other W3C standards: DOM, CSS, SMIL</p>
+			</section>
+			<section>
+				<section>Capabilities of SVG</section>
+				<section>
+					<p style="font-size: 20px;">SVG used to create user interfaces</p>
+					<div>
+						<svg width="100" version="1.1" id="L1" xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100"
+							enable-background="new 0 0 100 100" xml:space="preserve">
+							<circle fill="none" stroke="#d6d6d6" stroke-width="6" stroke-miterlimit="15"
+								stroke-dasharray="14.2472,14.2472" cx="50" cy="50" r="47">
+								<animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="5s"
+									from="0 50 50" to="360 50 50" repeatCount="indefinite" />
+							</circle>
+							<g fill="#fff">
+							</g>
+						</svg>
+						<svg width="100" version="1.1" id="L2" xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100"
+							enable-background="new 0 0 100 100" xml:space="preserve">
+							<circle fill="none" stroke="#d6d6d6" stroke-width="4" stroke-miterlimit="10" cx="50" cy="50"
+								r="48" />
+							<line fill="none" stroke-linecap="round" stroke="#d6d6d6" stroke-width="4"
+								stroke-miterlimit="10" x1="50" y1="50" x2="85" y2="50.5">
+								<animateTransform attributeName="transform" dur="2s" type="rotate" from="0 50 50"
+									to="360 50 50" repeatCount="indefinite" />
+							</line>
+							<line fill="none" stroke-linecap="round" stroke="#d6d6d6" stroke-width="4"
+								stroke-miterlimit="10" x1="50" y1="50" x2="49.5" y2="74">
+								<animateTransform attributeName="transform" dur="15s" type="rotate" from="0 50 50"
+									to="360 50 50" repeatCount="indefinite" />
+							</line>
+						</svg>
+						<svg width="100" version="1.1" id="L3" xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100"
+							enable-background="new 0 0 0 0" xml:space="preserve">
+							<circle fill="none" stroke="#d6d6d6" stroke-width="4" cx="50" cy="50" r="44"
+								style="opacity:0.5;" />
+							<circle fill="#fff" stroke="#d6d6d6" stroke-width="3" cx="8" cy="54" r="6">
+								<animateTransform attributeName="transform" dur="2s" type="rotate" from="0 50 48"
+									to="360 50 52" repeatCount="indefinite" />
+
+							</circle>
+						</svg>
+					</div>
+				</section>
+				<section>
+					<h3>SVG as static images</h3>
+					<ul>
+						<li style="font-size: 20px;">SVG images are defined in a vector graphics</li>
+						<li style="font-size: 20px;">Can be scaled in size without loss of quality</li>
+						<li style="font-size: 20px;">XML text files can be created and edited with text editors</li>
+						<li style="font-size: 20px;">Most-used web browsers can render SVG</li>
+					</ul>
+				</section>
+				<section>
+					<h4>SVG for animation</h4>
+					<ul>
+						<li style="font-size: 20px;">SVG images are defined in a vector graphics</li>
+						<li style="font-size: 20px;">Can be scaled in size without loss of quality</li>
+						<li style="font-size: 20px;">XML text files can be created and edited with text editors</li>
+						<li style="font-size: 20px;">Most-used web browsers can render SVG</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<h4>SVG composition:</h4>
+				<ul>
+					<li style="font-size: 20px;">Lines and broken lines</li>
+					<li style="font-size: 20px;">Polygons</li>
+					<li style="font-size: 20px;">Circles and ellipses</li>
+					<li style="font-size: 20px;">Bezier curves</li>
+					<li style="font-size: 20px;">Complex contours</li>
+					<li style="font-size: 20px;">Text</li>
+				</ul>
+			</section>
+			<section>
+				<div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+					<h4>Advantages</h4>
+					<ul>
+						<li style="font-size: 20px;">Possibility of modification</li>
+						<li style="font-size: 20px;">Lightweight files</li>
+						<li style="font-size: 20px;">Availability</li>
+					</ul>
+					<img width="500"
+						src="https://hsto.org/r/w1560/files/599/ae1/5d3/599ae15d398040aea40d2d89ca26b670.png">
+				</div>
+			</section>
+			<section>
+				<section>Functionality</section>
+				<section>
+					<h4>Paths</h4>
+					<p style="font-size: 20px;">Simple or compound shape outlines are drawn with curved or straight lines that can be filled in,
+						outlined, or used as a clipping path. Paths have a compact coding.</p>
+				</section>
+				<section>
+					<h4>Basic Shapes</h4>
+					<p style="font-size: 20px;">Straight-line paths and paths made up of a series of connected straight-line segments, as well as
+						closed polygons, circles, and ellipses can be drawn</p>
+				</section>
+				<section>
+					<h4>Text</h4>
+					<p style="font-size: 20px;">Unicode character text included in an SVG file is expressed as XML character data. Many visual
+						effects are possible, and the SVG specification automatically handles text</p>
+				</section>
+				<section>
+					<h4>Painting</h4>
+					<p style="font-size: 20px;">SVG shapes can be filled and outlined. Fills may be opaque, or have any degree of transparency.
+					</p>
+				</section>
+				<section>
+					<h4>Colors</h4>
+					<p style="font-size: 20px;">Colors can be applied to all visible SVG elements, either directly or via fill, stroke, and other
+						properties.</p>
+				</section>
+				<section>
+					<h4>Gradients and patterns</h4>
+					<p style="font-size: 20px;">SVG shapes can be filled or outlined with solid colors as above, or with color gradients or with
+						repeating patterns. Color gradients can be linear or radial (circular), and can involve any
+						number of colors as well as repeats.</p>
+				</section>
+				<section>
+					<h4>Clipping, masking and compositing</h4>
+					<p style="font-size: 20px;">Graphic elements, including text, paths, basic shapes and combinations of these, can be used as
+						outlines to define both inside and outside regions that can be painted (with colors, gradients
+						and patterns) independently.</p>
+				</section>
+				<section>
+					<h4>Filter effects</h4>
+					<p style="font-size: 20px;">A filter effect consists of a series of graphics operations that are applied to a given source
+						vector graphic to produce a modified bitmapped result.</p>
+				</section>
+				<section>
+					<h4>Interactivity</h4>
+					<p style="font-size: 20px;">SVG images can interact with users in many ways. In addition to hyperlinks as mentioned below,
+						any part of an SVG image can be made receptive to user interface events</p>
+				</section>
+				<section>
+					<h4>Linking</h4>
+					<p style="font-size: 20px;">SVG images can contain hyperlinks to other documents, using XLink. Through the use of the 'view'
+						element or a fragment identifier, URLs can link to SVG files that change the visible area of the
+						document. </p>
+				</section>
+				<section>
+					<h4>Scripting</h4>
+					<p style="font-size: 20px;">All aspects of an SVG document can be accessed and manipulated using scripts in a similar way to
+						HTML. The default scripting language is JavaScript and there are defined Document Object Model
+						(DOM) objects for every SVG element and attribute.</p>
+				</section>
+				<section>
+					<h4>Animation</h4>
+					<p style="font-size: 20px;">SVG content can be animated using the built-in animation elements such as "animate",
+						'animateMotion' and 'animateColor'</p>
+				</section>
+				<section>
+					<h4>Fonts</h4>
+					<p style="font-size: 20px;">As with HTML and CSS, text in SVG may reference external font files, such as system fonts</p>
+				</section>
+				<section>
+					<h4>Metadata</h4>
+					<p style="font-size: 20px;">In accord with the W3C's Semantic Web initiative, SVG allows authors to provide metadata about
+						SVG content.</p>
+				</section>
+			</section>
+			<section>
+				<h4>Conclusion</h4>
+				<p style="font-size: 20px;">If you need clear, adaptive or animated interface elements, icons, logos, vector images, then it is
+					best to use the SVG format.</p>
+			</section>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
